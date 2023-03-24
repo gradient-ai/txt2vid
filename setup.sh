@@ -17,6 +17,4 @@ cd TTS
 pip install -e .[all,dev,notebooks]  # Select the relevant extras
 pip install -U transformers
 cd ..
-git-lfs clone https://huggingface.co/damo-vilab/modelscope-damo-text-to-video-synthesis
-wget https://huggingface.co/spaces/fffiloni/spectrogram-to-music/raw/main/spectro.py
 mkdir outs

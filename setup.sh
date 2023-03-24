@@ -15,6 +15,10 @@ cd ..
 git clone https://github.com/coqui-ai/TTS
 cd TTS
 pip install -e .[all,dev,notebooks]  # Select the relevant extras
+pip install git+https://github.com/coqui-ai/TTS
 pip install -U transformers
 cd ..
+git-lfs clone https://huggingface.co/damo-vilab/modelscope-damo-text-to-video-synthesis
 mkdir outs
+mv configuration.json modelscope-damo-text-to-video-synthesis/configuration.json
+huggingface-cli login
